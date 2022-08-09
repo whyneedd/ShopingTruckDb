@@ -13,3 +13,14 @@
     })
  }
  removeactivelink();
+
+function MenuToggle() {
+    var humb = document.querySelector(".nav__humbger");
+    var menu = document.querySelector(".nav__list");
+
+    humb.addEventListener("click", () => {
+            humb.classList.toggle("active");
+            menu.classList.toggle("active");
+        })
+}
+MenuToggle();

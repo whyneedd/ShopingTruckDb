@@ -107,11 +107,63 @@ img {
         right: -100%;
         width: 100%;
         height: 100vh;
-        background: red;
+        background: rgb(255, 255, 255, .45);
+        backdrop-filter: blur(8px);
+        transition: all .3s ease-in-out;
+    }
+
+    .nav__list.active {
+        right: 0;
     }
     .nav__link {
         display: block;
         margin-bottom: 0.75rem;
+    }
+    .header {
+        .logo {
+            a {
+                margin-left: 1.5rem;
+                font-size: 25px;
+            }
+        }
+    }
+
+    .nav__humbger {
+        position: absolute;
+        display: block;
+        width: 35px;
+        height: 35px;
+        top: 1.5rem;
+        right: 1.5rem;
+
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .nav__humbger .bar,
+    .nav__humbger::before,
+    .nav__humbger::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 5px;
+        margin: 6px 0;
+        border-radius: 0.75rem;
+        background: rgb(0, 0, 0);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav__humbger.active::before {
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .nav__humbger.active::after {
+        transform: rotate(45deg) translate(-9px, -8px);
+    }
+
+    .nav__humbger.active .bar {
+        opacity: 0;
     }
 }
 
@@ -264,8 +316,6 @@ img {
         right: 200px;
         top: 50px;
     }
-
- 
 
     @media screen and (max-width: 981px) {
         &__data {
