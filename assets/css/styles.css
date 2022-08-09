@@ -243,7 +243,7 @@ img {
 .shop .card {
   display: grid;
   width: 282px;
-  height: 270px;
+  height: 320px;
   padding: 20px;
   border-radius: 0.75rem;
   box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.45);
