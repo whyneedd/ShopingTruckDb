@@ -32,6 +32,10 @@ body {
     background: rgb(255, 255, 255);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 ul,
 li,
 a {
@@ -231,7 +235,6 @@ img {
         border: none;
         border-radius: 0.55em;
         font-weight: 600;
-        color: #fff;
         background: var(--first-color-second);
     }
     &__img {
@@ -266,9 +269,9 @@ img {
         height: 270px;
         padding: 20px;
         border-radius: 0.75rem;
-        background: rgb(203, 204, 204, 0.45);
+        // background: rgb(203, 204, 204, 0.45);
         // backdrop-filter: blur(5px);
-        box-shadow: 0 1px 5px rgb(0, 0, 0, 0.45);
+        box-shadow: 7px 5px 5px rgb(0, 0, 0, 0.45);
         .img img {
             position: relative;
             display: flex;
@@ -279,6 +282,10 @@ img {
             height: auto;
 
             transition: transform 0.3s;
+        }
+        .detail {
+            font-weight: 570;
+            width: 120px;
         }
     }
 
@@ -298,7 +305,7 @@ img {
     padding: 4rem 0 5rem;
     &__data {
         margin-left: 12%;
-        width: 340px;
+        width: 500px;
     }
     &__btn {
         display: block;
@@ -306,6 +313,7 @@ img {
         margin-top: 12px;
         border: none;
         outline: none;
+        font-weight: 550;
         border-radius: 0.65rem;
         background: rgb(243, 138, 12);
         cursor: pointer;
@@ -316,8 +324,8 @@ img {
     }
     &__img {
         position: absolute;
-        right: 200px;
-        top: 50px;
+        right: 100px;
+        top: 0px;
     }
 
     @media screen and (max-width: 981px) {
@@ -325,11 +333,11 @@ img {
             width: 300px;
         }
         &__img {
-            margin-top: 70%;
-            transform: translateX(50%);
+            top: 80%;
         }
         &__img img {
-            width: 180px;
+            width: 100%;
+            height: auto;
         }
     }
 }

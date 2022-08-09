@@ -1,4 +1,4 @@
- function removeactivelink() {
+ function NavigationAct() {
     var link = document.querySelector(".nav__menu");
     var btn = document.querySelector(".nav__link");
 
@@ -12,7 +12,7 @@
         }
     })
  }
- removeactivelink();
+ NavigationAct();
 
 function MenuToggle() {
     var humb = document.querySelector(".nav__humbger");

@@ -26,6 +26,10 @@ body {
   background: rgb(255, 255, 255);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ul,
 li,
 a {
@@ -209,7 +213,6 @@ img {
   border: none;
   border-radius: 0.55em;
   font-weight: 600;
-  color: #fff;
   background: var(--first-color-second);
 }
 .home__img {
@@ -243,8 +246,7 @@ img {
   height: 270px;
   padding: 20px;
   border-radius: 0.75rem;
-  background: rgba(203, 204, 204, 0.45);
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
+  box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.45);
 }
 .shop .card .img img {
   position: relative;
@@ -255,6 +257,10 @@ img {
   margin-right: auto;
   height: auto;
   transition: transform 0.3s;
+}
+.shop .card .detail {
+  font-weight: 570;
+  width: 120px;
 }
 .shop .card:hover .img img {
   transform: scale(1.1);
@@ -271,7 +277,7 @@ img {
 }
 .promotion__data {
   margin-left: 12%;
-  width: 340px;
+  width: 500px;
 }
 .promotion__btn {
   display: block;
@@ -279,6 +285,7 @@ img {
   margin-top: 12px;
   border: none;
   outline: none;
+  font-weight: 550;
   border-radius: 0.65rem;
   background: rgb(243, 138, 12);
   cursor: pointer;
@@ -289,19 +296,19 @@ img {
 }
 .promotion__img {
   position: absolute;
-  right: 200px;
-  top: 50px;
+  right: 100px;
+  top: 0px;
 }
 @media screen and (max-width: 981px) {
   .promotion__data {
     width: 300px;
   }
   .promotion__img {
-    margin-top: 70%;
-    transform: translateX(50%);
+    top: 80%;
   }
   .promotion__img img {
-    width: 180px;
+    width: 100%;
+    height: auto;
   }
 }
 
