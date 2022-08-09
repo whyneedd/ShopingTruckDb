@@ -263,10 +263,21 @@ img {
         position: absolute;
         right: 200px;
         top: 50px;
-        transition: transform 0.3s;
     }
-    &__img:hover {
-        transform: scale(1.1);
+
+ 
+
+    @media screen and (max-width: 981px) {
+        &__data {
+            width: 300px;
+        }
+        &__img {
+            margin-top: 70%;
+            transform: translateX(50%);
+        }
+        &__img img {
+            width: 180px;
+        }
     }
 }
 

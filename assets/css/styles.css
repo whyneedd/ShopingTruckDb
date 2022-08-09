@@ -247,10 +247,18 @@ img {
   position: absolute;
   right: 200px;
   top: 50px;
-  transition: transform 0.3s;
 }
-.promotion__img:hover {
-  transform: scale(1.1);
+@media screen and (max-width: 981px) {
+  .promotion__data {
+    width: 300px;
+  }
+  .promotion__img {
+    margin-top: 70%;
+    transform: translateX(50%);
+  }
+  .promotion__img img {
+    width: 180px;
+  }
 }
 
 .footer {
