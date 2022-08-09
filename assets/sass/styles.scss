@@ -96,6 +96,9 @@ img {
     }
 }
 
+.nav__humbger {
+    display: none;
+}
 @media screen and (max-width: 1170px) {
     .nav__list {
         position: absolute;
@@ -263,8 +266,8 @@ img {
         height: 270px;
         padding: 20px;
         border-radius: 0.75rem;
-        background: rgb(203, 204, 204, 0.43);
-        backdrop-filter: blur(5px);
+        background: rgb(203, 204, 204, 0.45);
+        // backdrop-filter: blur(5px);
         box-shadow: 0 1px 5px rgb(0, 0, 0, 0.45);
         .img img {
             position: relative;
